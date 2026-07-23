@@ -191,8 +191,14 @@ const Play = () => {
     return game.get(square) || null;
   };
 
+  // Handles a click on a board square.
+  // Click flow:
+  //   1. No piece selected → select a piece (if it belongs to the current player)
+  //   2. Piece selected, click a valid target → make the move
+  //   3. Piece selected, click own piece → switch selection to that piece
+  //   4. Piece selected, click invalid square → deselect
   const handleSquareClick = (square: Square) => {
-    if (engineThinking || game.turn() !== 'w') return;
+    if (engineThinking || game.turn() !== 'w') return; // Block input during engine turn
     const piece = getPieceAt(square);
 
     // If a piece is already selected

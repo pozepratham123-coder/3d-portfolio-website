@@ -3,18 +3,17 @@
   display: none;
 }
 
-/* Mobile layout: 3D character visible, text scaled for small screens */
+/* Mobile layout: 3D character visible inside the landing section */
 @media only screen and (max-width: 768px) {
-  /* Use fixed positioning so the canvas anchors to the viewport (not the document),
-     matching how it behaves on desktop. z-index: 0 lets content sections scroll over it. */
+  /* Character is position: absolute (base CSS) inside landing-section
+     (position: relative; height: 100svh) — no fixed positioning needed.
+     height: 80vh fills most of the section; bottom: 0 pins to the bottom. */
   .character-model {
-    position: fixed;
+    height: 80vh;
     bottom: 0;
-    height: 65vh;
-    z-index: 0;
   }
 
-  /* Scale down name text */
+  /* Scale down name text for small screens */
   .landing-intro h1 {
     font-size: 22px;
     line-height: 24px;
@@ -26,7 +25,7 @@
     letter-spacing: 1px;
   }
 
-  /* Fix title text wrapping on narrow screens */
+  /* Prevent title text from overflowing narrow screens */
   .landing-info h2 {
     font-size: 22px;
     line-height: 28px;
@@ -45,7 +44,6 @@
     letter-spacing: 1px;
   }
 
-  /* Tighten bottom spacing on small screens */
   .landing-info {
     bottom: 20px;
   }

@@ -226,9 +226,12 @@ const Play = () => {
     }
   };
 
+  // Executes a move on a copy of the current game state.
+  // chess.js validates the move — if invalid, it throws (caught below).
+  // Pawn promotion always promotes to Queen automatically.
   const makeMove = (from: Square, to: Square) => {
     try {
-      const gameCopy = new Chess(game.fen());
+      const gameCopy = new Chess(game.fen()); // Immutable approach: work on a copy
       const move = gameCopy.move({ from, to, promotion: 'q' }); // Auto-promote to queen
 
       if (move) {

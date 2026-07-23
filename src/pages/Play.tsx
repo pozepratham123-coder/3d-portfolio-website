@@ -1,3 +1,32 @@
+// Play.tsx — Interactive chess game + AI chat page (/play).
+//
+// Two panels side-by-side:
+//
+//  LEFT — Chat panel
+//    An AI chat where visitors can talk to "Pratham" (powered by the OpenAI
+//    API via the serverless /api/chat endpoint). The SYSTEM_PROMPT persona
+//    instructs the model to respond as Pratham Oza in first person.
+//    Messages are kept in local state — there is no persistence between sessions.
+//
+//  CENTRE — Chess board
+//    A fully functional chess board built with chess.js for move validation.
+//    The player always plays White. The opponent (Black) is the Redox chess
+//    engine (a Rust/WASM engine) running in a Web Worker via redoxchessEngine.ts.
+//    The engine searches at depth 12 — competitive but beatable.
+//    Piece SVGs are inline strings matching chess.com's visual style.
+//
+//  RIGHT — Move history + game controls
+//    Lists all played moves in standard algebraic notation (SAN).
+//    "New Game" resets the board. "Flip Board" starts a new game and flips
+//    coordinates (but since the player is always White, this restarts).
+//
+// Key state:
+//   game           — the Chess instance (immutable; each move creates a new copy)
+//   selectedSquare — the square the player has clicked to select a piece
+//   possibleMoves  — valid target squares highlighted for the selected piece
+//   lastMove       — the most recent from/to squares (highlighted on the board)
+//   engineThinking — true while the engine is calculating (blocks player input)
+
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Chess, Square, PieceSymbol, Color } from "chess.js";

@@ -171,16 +171,19 @@ const Play = () => {
     };
   }, []);
 
+  // When it's Black's turn (engine's turn) and the game isn't over,
+  // send the current position to the engine and wait for the best move.
+  // engineThinking blocks player input while the engine calculates.
   useEffect(() => {
     if (game.turn() === 'b' && !game.isGameOver() && redoxchessRef.current) {
       setEngineThinking(true);
-      redoxchessRef.current.setPosition(game.fen());
+      redoxchessRef.current.setPosition(game.fen()); // FEN encodes the full board state
       redoxchessRef.current.getBestMove((move) => {
-        const from = move.substring(0, 2) as Square;
-        const to = move.substring(2, 4) as Square;
+        const from = move.substring(0, 2) as Square; // e.g. "e7"
+        const to = move.substring(2, 4) as Square;   // e.g. "e5"
         makeMove(from, to);
         setEngineThinking(false);
-      }, 12);
+      }, 12); // Search depth 12 — strong but not overwhelming
     }
   }, [game]);
 

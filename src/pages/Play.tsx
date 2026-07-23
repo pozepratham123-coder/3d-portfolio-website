@@ -349,6 +349,8 @@ const Play = () => {
     }
   };
 
+  // Looks up the SVG string for a piece and renders it via dangerouslySetInnerHTML.
+  // SVGs are static trusted strings defined at the top of this file — not user input.
   const renderPiece = (piece: { type: PieceSymbol; color: Color } | null) => {
     if (!piece) return null;
     const key = `${piece.color}${piece.type.toUpperCase()}`;

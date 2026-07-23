@@ -198,6 +198,13 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+/* Poza logo on the loading screen — dark tint to match the light background */
+.loader-logo {
+  height: 30px;
+  width: auto;
+  display: block;
+  filter: brightness(0); /* Render black so it's legible on the cream background */
+}
 @keyframes blink {
   0% {
     opacity: 0;

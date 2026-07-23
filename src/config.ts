@@ -1,24 +1,40 @@
+/**
+ * config.ts — Central data store for the entire portfolio.
+ *
+ * All personal info, job experience, projects, skills, and social links
+ * are defined here. To update the site content, only edit this file —
+ * every component reads from this single source of truth.
+ */
 export const config = {
+
+    // ─── Developer identity ───────────────────────────────────────────────────
     developer: {
-        name: "Pratham",
-        fullName: "Pratham Oza",
-        title: "Head of GTM | AI & Software Engineer",
+        name: "Pratham",                              // First name only (used in casual greetings)
+        fullName: "Pratham Oza",                      // Full name shown in headings / footer
+        title: "Head of GTM | AI & Software Engineer", // Job title split by " | " in Landing.tsx
         description: "Head of GTM at Fibr AI (Accel Funded, $7.5Mn), building AI Agents for Website Experiences. Computer Science graduate from BITS Pilani with a Minor in Entrepreneurship."
     },
+
+    // ─── Social / contact quick-access ───────────────────────────────────────
     social: {
         github: "pratham-oza",
         email: "pratham@poza.in",
         location: "Bengaluru, India"
     },
+
+    // ─── About section ────────────────────────────────────────────────────────
     about: {
         title: "About Me",
         description: "Working at Fibr (Accel Funded, $7.5Mn), building AI Agents for Website Experiences and learning GTM along the way. Computer Science @ BITS Pilani, Pilani Campus."
     },
+
+    // ─── Work experience timeline (rendered in Career.tsx) ───────────────────
+    // Add new roles at the TOP of this array — they render top-to-bottom.
     experiences: [
         {
             position: "Head of GTM",
             company: "Fibr AI",
-            period: "Sep 2024 - Present",
+            period: "Sep 2024 - Present",   // "Present" triggers "NOW" label in the timeline
             location: "Bengaluru, India",
             description: "Building AI-powered web experiences for every visitor at Fibr AI. Driving B2B tech sales across GTM channels using automation and AI — from outbound discovery through to deal close and client solutioning.",
             responsibilities: [
@@ -38,7 +54,7 @@ export const config = {
             description: "Cloud Consultant on the Google Workspace Team, India Division at Searce Inc — a Global Google Premier Partner. Completed the Google Cloud Digital Leader Certification.",
             responsibilities: [
                 "Part of the Google Workspace Team, India Division at Searce Inc, a consulting firm operating as a Global Google Premier Partner",
-                "Completed the Google Cloud Digital Leader Certification, improving Searce’s standing and certification portfolio as a Global Google Premier Partner"
+                "Completed the Google Cloud Digital Leader Certification, improving Searce's standing and certification portfolio as a Global Google Premier Partner"
             ],
             technologies: ["Google Cloud", "Google Workspace", "Cloud Consulting", "GCP Digital Leader"]
         },
@@ -58,16 +74,16 @@ export const config = {
             technologies: ["Performance Marketing", "SEO", "Google Ads", "Meta Ads", "Mixpanel", "AppsFlyer", "DV 360"]
         },
         {
-            position: "Founding Team — Founder’s Office",
+            position: "Founding Team — Founder's Office",
             company: "UpTrain (YC W23)",
             period: "Sep 2023 - Dec 2023",
             location: "Remote",
-            description: "Part of the Founding Team in the Founder’s Office at UpTrain, a Y Combinator W23 company building open-source LLM evaluation infrastructure. Drove early GTM through research, outbound sales, content, and social outreach.",
+            description: "Part of the Founding Team in the Founder's Office at UpTrain, a Y Combinator W23 company building open-source LLM evaluation infrastructure. Drove early GTM through research, outbound sales, content, and social outreach.",
             responsibilities: [
-                "Collected startup experience through the YCombinator Cohort of Winter 2023, working directly in the Founder’s Office on early-stage GTM and growth",
+                "Collected startup experience through the YCombinator Cohort of Winter 2023, working directly in the Founder's Office on early-stage GTM and growth",
                 "Researched the AI Business Sector of 50+ companies in the North American Region, with special focus on independent LLM owners",
                 "Developed inbound and outbound sales strategies on Apollo Intelligence via performing 100+ company-targeted outreaches",
-                "Published 4 blogs on Evaluation Metrics of Large Language Models, contributing to UpTrain’s thought leadership in the LLM space",
+                "Published 4 blogs on Evaluation Metrics of Large Language Models, contributing to UpTrain's thought leadership in the LLM space",
                 "Handled LinkedIn and X (Twitter) outreach for UpTrain, growing brand presence among AI practitioners and early adopters"
             ],
             technologies: ["YC W23", "AI", "LLM Evaluation", "Sales", "Growth", "Content Marketing"]
@@ -87,6 +103,10 @@ export const config = {
             technologies: ["RPA", "Automation Anywhere", "OCR", "Web Scraping", "Automation"]
         }
     ],
+
+    // ─── Projects (shown in Work.tsx and MyWorks page) ────────────────────────
+    // Only the first 5 are shown in the horizontal scroll on the homepage.
+    // All projects appear on the /myworks full page.
     projects: [
         {
             id: 1,
@@ -94,7 +114,7 @@ export const config = {
             category: "Web3 / Startup",
             technologies: "Discord API, Blockchain, Solana Web3 SDK, TypeScript, Node.js",
             image: "/images/placeholder.webp",
-            description: "Co-founded a Discord Bot that converts social media accounts into Web3 gateways — 1-click wallet creation & transactions over channels. Won DAAD Grant (Germany), Desert Hack, Solana Hacker House (Delhi ‘22 & Bangalore ‘23), SPARKLE equity-free grant (~Rs.2L), pre-seed incubation at PIEDS, and Udaan Bootcamp by India Accelerator."
+            description: "Co-founded a Discord Bot that converts social media accounts into Web3 gateways — 1-click wallet creation & transactions over channels. Won DAAD Grant (Germany), Desert Hack, Solana Hacker House (Delhi '22 & Bangalore '23), SPARKLE equity-free grant (~Rs.2L), pre-seed incubation at PIEDS, and Udaan Bootcamp by India Accelerator."
         },
         {
             id: 2,
@@ -105,14 +125,20 @@ export const config = {
             description: "Published research on advanced encryption using Generative Adversarial Networks to enhance the security of Non-Fungible Tokens (NFTs). Published in IEEE Access (IF: 3.9) achieving <0.45s execution time and reducing image similarity to <1%. Research conducted under the SPARKLE program at BITS Pilani."
         }
     ],
+
+    // ─── Contact links (used in Contact.tsx, SocialIcons.tsx, Navbar.tsx) ────
+    // Leave facebook as "" to hide it — Contact.tsx conditionally renders it.
     contact: {
         email: "pratham@poza.in",
         github: "https://github.com/pratham-oza",
         linkedin: "https://linkedin.com/in/pratham-oza-9637ba201",
         twitter: "https://x.com/aspro_99",
-        facebook: "",
+        facebook: "",                                 // Empty → hidden in Contact section
         instagram: "https://www.instagram.com/pozaeiou"
     },
+
+    // ─── Skills shown in the "What I Do" section (WhatIDo.tsx) ──────────────
+    // Each object maps to one card. title → big heading, tools → tag pills.
     skills: {
         develop: {
             title: "GTM & AI SALES",
@@ -128,5 +154,3 @@ export const config = {
         }
     }
 };
-
-

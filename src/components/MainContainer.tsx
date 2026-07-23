@@ -52,12 +52,12 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       {/* Fixed left-side column with GitHub / LinkedIn / Twitter / Instagram icons */}
       <SocialIcons />
 
-      {/* 3D character canvas — renders on all screen sizes */}
-      {children}
-
       {/* Scrollable page content — all sections stack vertically */}
       <div className="container-main">
-        <Landing />      {/* Hero / name section */}
+        {/* 3D character canvas is passed into Landing so it anchors correctly
+            inside the landing-section (position: relative; height: 100svh)
+            on all screen sizes, including mobile.                           */}
+        <Landing>{children}</Landing>  {/* Hero / name section */}
         <About />        {/* Short bio paragraph */}
         <WhatIDo />      {/* Two skill cards (GTM & Software) */}
         <Career />       {/* Vertical experience timeline */}

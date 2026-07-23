@@ -1,0 +1,227 @@
+PRATHAM OZA — PORTFOLIO CONTENT
+poza.in
+================================
+
+
+ABOUT
+-----
+
+Working at Fibr (Accel Funded, $7.5Mn), building AI Agents for Website Experiences and learning GTM along the way.
+Computer Science @ BITS Pilani, Pilani Campus.
+
+Contact:
+- LinkedIn: linkedin.com/in/pratham-oza-9637ba201
+- Email: pratham@poza.in
+- Twitter: x.com/aspro_99
+- Instagram: instagram.com/pozaeiou
+
+
+================================================================
+EXPERIENCE
+================================================================
+
+1. FIBR AI
+   Role: Head of GTM
+   Period: Sep 2024 – Present
+   Type: Full-Time
+   Details: Accel-funded startup ($7.5M raised)
+
+   Summary:
+   Building AI-powered web experiences for every visitor at Fibr AI. Driving B2B tech sales across GTM channels using automation and AI — from outbound discovery through to deal close and client solutioning.
+
+   Stats:
+   - 100+ Accounts Discovered
+   - 66% Cost Reduction
+   - 75+ Deals Owned
+   - $200K in Proposals
+
+   Key Contributions:
+   01. Led end-to-end customer discovery across 100+ mid-market & enterprise accounts, achieving 10%+ reply rates & 3%+ meeting bookings.
+   02. Engineered a 66% reduction in sales-ops and resource costs by deploying in-house automations using Lemlist, Webhooks & Apollo APIs.
+   03. Owned 75+ end-to-end deals — taking discovery calls, platform demos, pricing negotiations, & pilot scoping, with full tracking on Pipedrive CRM.
+   04. Researched 25+ CRO techniques and partnered with Product teams to enhance agentic personalisation, GEO optimisation, and A/B testing.
+   05. Part of the Solutioning team, achieving 20%+ conversion uplifts using AI-driven hypotheses, driving client renewals and $200K in proposals.
+
+   Tags: AI, GTM, B2B SaaS, CRO, Sales Automation, Solutioning
+
+---
+
+2. SEARCE INC
+   Role: Cloud Consultant — Google Workspace Team
+   Period: Jul – Sep 2024
+   Type: Full-Time
+   Details: India Division, Global Google Premier Partner
+
+   Summary:
+   Cloud Consultant on the Google Workspace Team, India Division at Searce Inc — a Global Google Premier Partner. Completed the Google Cloud Digital Leader Certification, contributing to Searce's standing as a top-tier Google Cloud partner.
+
+   Stats:
+   - GCP Digital Leader Certified
+   - #1 Global Premier Partner
+   - India Division
+
+   Key Contributions:
+   01. Part of the Google Workspace Team, India Division at Searce Inc, a consulting firm operating as a Global Google Premier Partner.
+   02. Completed the Google Cloud Digital Leader Certification, improving Searce's standing and certification portfolio as a Global Google Premier Partner.
+
+   Tags: Google Cloud, Google Workspace, Cloud Consulting, Certification
+
+---
+
+3. VIACOM18, JIOCINEMA
+   Role: Performance & Growth Marketing Intern
+   Period: Feb – Jun 2024
+   Type: Internship (PPO Offered)
+   Details: Digital Ventures, SVOD
+
+   Summary:
+   Performance & Growth Marketing at Digital Ventures, JioCinema. Led the JioCinema Premium launch (Rs.29/month) — managing paid campaigns across Google & Meta, SEO for SVOD titles, analytics via AppsFlyer & MixPanel, and reporting directly viewed by upper management.
+
+   Stats:
+   - 15% CPS Reduction
+   - 10+ Funnels Built
+   - 10+ SVOD Titles SEO'd
+   - 40% Reporting Time Saved
+
+   Key Contributions:
+   01. Built 10+ conversion funnels and studied user behavior in Mixpanel & AppsFlyer to support the Analytics team with data-driven insights.
+   02. Analyzed Subscriptions of JioCinema for Web+App via Google & Meta Ads Manager, resulting in a 15% reduction in Cost-Per-Subscription.
+   03. Managed On-Page & Off-Page SEO of 10+ SVOD Entertainment Titles using SEMrush, Google Search Console & Google Keyword Planner.
+   04. Compiled reports on MS Excel for Digital Impact of 6 New Launches with KPIs — Clicks, Reach, Revenue, Impressions & Views using DV 360.
+   05. Collaborated with Havas Media (external agency) on daily reports directly viewed by SVOD upper management, reducing reporting time by 40%.
+
+   Tags: Performance Marketing, SEO, Google Ads, Meta Ads, Analytics, OTT
+
+---
+
+4. UPTRAIN (YC W23)
+   Role: Founding Team — Founder's Office
+   Period: Sep – Dec 2023
+   Type: Internship
+   Details: Y Combinator W23, AI / LLM Evaluation
+
+   Summary:
+   Part of the Founding Team in the Founder's Office at UpTrain, a Y Combinator W23 company building open-source LLM evaluation infrastructure. Drove early GTM through research, outbound sales, content, and social outreach.
+
+   Stats:
+   - 50+ Companies Researched
+   - 100+ Outreaches Done
+   - 4 LLM Blogs Published
+   - YC W23 Cohort
+
+   Key Contributions:
+   01. Collected startup experience through the YCombinator Cohort of Winter 2023, working directly in the Founder's Office on early-stage GTM and growth.
+   02. Researched the AI Business Sector of 50+ companies in the North American Region, with special focus on independent LLM owners.
+   03. Developed inbound and outbound sales strategies on Apollo Intelligence via performing 100+ company-targeted outreaches.
+   04. Published 4 blogs on Evaluation Metrics of Large Language Models, contributing to UpTrain's thought leadership in the LLM space.
+   05. Handled LinkedIn and X (Twitter) outreach for UpTrain, growing brand presence among AI practitioners and early adopters.
+
+   Tags: YC W23, AI, LLM, Sales, Growth, Content
+
+---
+
+5. SILVER TOUCH TECHNOLOGIES
+   Role: RPA Developer — BITS Pilani PS-1
+   Period: Jun – Aug 2022
+   Type: Internship
+   Details: Top Performing Intern, Grade A
+
+   Summary:
+   Selected via the BITS Pilani Practice School-1 Internship Program. Worked as an RPA Developer building automation bots on Automation Anywhere. Finished as Top Performing Intern with Grade A, delivering a 20-fold efficiency improvement over manual processes.
+
+   Stats:
+   - Grade A Top Intern
+   - 20x Efficiency Gain
+   - 10+ Assignments Completed
+   - 2 Bots Shipped
+
+   Key Contributions:
+   01. Selected via the BITS Pilani Practice School-1 (PS-1) Internship Program and finished as Top Performing Intern with Grade A.
+   02. Completed 10+ assignments on Automation Anywhere covering Excel, Email, PDF, File & Folder, OCR, and Web Scraping packages.
+   03. Learnt about credentials & lockers, with focus on security of Outlook Mails (IMAP & SMTP).
+   04. Designed a Grade Confirmation Bot enabling one-click sending of custom grade reports as PDFs over mail to 100% of the complete mailing list.
+   05. Created an E-commerce OCR Bot to fetch details on Amazon retail — capturing name, author, date & price of books to CSV, achieving a 20-fold efficiency improvement over manual processes on a logarithmic scale.
+
+   Tags: RPA, Automation Anywhere, OCR, BITS Pilani PS-1, Automation
+
+
+================================================================
+PROJECTS
+================================================================
+
+1. RAPTURES — Web3 Wallet
+   Co-founded a Discord Bot that converts social media accounts into Web3 gateways — 1-click wallet creation & transactions over channels. Won DAAD Grant (Germany), Desert Hack, Solana Hacker House (Delhi '22 & Bangalore '23), SPARKLE equity-free grant (~Rs.2L), pre-seed incubation at PIEDS, and Udaan Bootcamp by India Accelerator.
+
+   Tags: Web3, Discord, Blockchain, Startup
+
+---
+
+2. GAN ENCRYPTION — NFT Security
+   Published research on advanced encryption using Generative Adversarial Networks to enhance the security of Non-Fungible Tokens (NFTs). Research conducted under SPARKLE program at BITS Pilani.
+
+   Tags: GAN, NFT, Security, Published
+
+
+================================================================
+STARTUP
+================================================================
+
+RAPTURES
+Period: Jun 2022 – Jan 2024
+
+Co-founded with Madhav. Raptures converts social media accounts into Web3 gateways via a Discord Bot. Pre-seed incubated at PIEDS, DAAD Grant recipient, Desert Hack winners, pitched at Solana Hacker House (Delhi & Bangalore), IRL at BuildSpace S4 Dubai, and selected for Udaan Bootcamp by India Accelerator.
+
+Tags: Web3, Discord Bot, Blockchain, Pre-Seed
+
+
+================================================================
+AWARDS
+================================================================
+
+1. DAAD Grant — TU Braunschweig, Germany
+   Funding for International High-Tech Start-up Camp hosted by Technical University Braunschweig. Attended June 2023.
+
+2. Desert Hack — Overall Winners, All Campus
+   Winners of the BITS Pilani all-campus startup competition with Raptures.
+
+3. Solana Hacker House — Demo Day
+   Pitched in front of ~500 participants & incubators at Solana Hacker House, New Delhi '22 & Bangalore '23.
+
+4. SPARKLE Research Grant — Rs.2,00,000
+   Equity-free grant under BITS Pilani's SPARKLE Research Program for blockchain and encryption research.
+
+5. President's Distinguished Club — Toastmasters
+   Achieved President's Distinguished Club status clearing 9/10 DCP goals. Awarded Beat-The-Clock Award. Judge at International Speech & Evaluation Competition 2022, Jaipur.
+
+6. Top Performing Intern — Silver Touch Technologies
+   Finished as Grade A top performer in the BITS Pilani Practice School-1 internship program.
+
+
+================================================================
+EDUCATION
+================================================================
+
+1. BITS Pilani — B.E. Computer Science
+   Bachelor of Engineering in Computer Science, Nov 2020 – Nov 2024.
+   Focus on AI, Systems, and distributed technologies.
+
+2. BITS Pilani — Minor in Entrepreneurship
+   Minor in Entrepreneurial Studies, Aug 2022 – Jun 2024.
+   Complemented CS degree with startup building, venture strategy, and innovation frameworks.
+
+3. Bansal Public School
+   Higher Secondary School Certificate (Science stream).
+
+
+================================================================
+MY LIFE
+================================================================
+
+1. Toastmasters — President, BITS Pilani
+   President (Jul 2022 – Jan 2023) of the BITS Pilani Toastmasters Club (29 members, District 98). Achieved President's Distinguished Club status. Also served as Sergeant-at-Arms and Event Head for Toastmasters at Apogee '22. Completed Pathway: Motivational Strategies.
+
+2. Travel & Exploration
+   Passionate about setting footsteps in places rarely explored — from Solana Hacker Houses in Delhi & Bangalore to startup camps in Braunschweig, Germany and BuildSpace in Dubai.
+
+3. Music & Conversations
+   Music in any shape or form. And a firm believer that every person holds stories no less than folklore — always up for a conversation.

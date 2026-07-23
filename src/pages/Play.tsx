@@ -377,6 +377,8 @@ const Play = () => {
     });
   };
 
+  // Pairs moves into {moveNum, white, black} objects for the move history panel.
+  // Chess notation lists moves in pairs: "1. e4 e5  2. Nf3 Nc6 ..."
   const formatMoveHistory = () => {
     const formatted: { moveNum: number; white: string; black: string }[] = [];
     for (let i = 0; i < moveHistory.length; i += 2) {

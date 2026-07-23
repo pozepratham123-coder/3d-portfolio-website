@@ -94,4 +94,7 @@
   .navbar-title {
     font-size: 18px;
   }
+  .navbar-logo {
+    height: 42px;
+  }
 }

@@ -45,6 +45,17 @@
   font-size: 13px;
   letter-spacing: 0.2px;
 }
+/* Poza logo in the top-left navbar slot */
+.navbar-logo {
+  height: 32px;
+  width: auto;
+  display: block;
+  filter: brightness(0) invert(1); /* Make it white to match the site's light text palette */
+  transition: opacity 0.2s ease;
+}
+.navbar-title:hover .navbar-logo {
+  opacity: 0.75;
+}
 @media only screen and (min-width: 500px) {
   .header {
     padding: 20px 0px;

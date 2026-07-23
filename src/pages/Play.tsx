@@ -288,6 +288,9 @@ const Play = () => {
     setBoardFlipped(!boardFlipped);
   };
 
+  // Sends the user's chat message to the /api/chat serverless function.
+  // The API route proxies to OpenAI and returns the assistant reply.
+  // The full conversation history is sent on every request (no server-side session).
   const sendMessage = async () => {
     if (!chatInput.trim()) return;
 

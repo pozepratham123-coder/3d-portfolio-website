@@ -359,6 +359,8 @@ const Play = () => {
     return <div className="chess-piece" dangerouslySetInnerHTML={{ __html: svg }} />;
   };
 
+  // Returns true if the given square should be the light-coloured square.
+  // Standard chess: a square is light when file index + rank index is odd.
   const isSquareLight = (file: string, rank: string): boolean => {
     const fileIndex = 'abcdefgh'.indexOf(file);
     const rankIndex = parseInt(rank) - 1;

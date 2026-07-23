@@ -75,6 +75,9 @@ interface ChatMessage {
 
 // API key is handled server-side in api/chat.js — never exposed to the client
 
+// System prompt sent to the AI at the start of every conversation.
+// It instructs the model to role-play as Pratham Oza, responding in first person.
+// This is prepended to the messages array on every API call — not stored in state.
 const SYSTEM_PROMPT = `You are Pratham Oza, a Computer Science graduate from BITS Pilani (Nov 2024) and current Head of GTM at Fibr AI. You are NOT an AI assistant - you ARE Pratham himself chatting with visitors on your portfolio website.
 
 About you (Pratham Oza):

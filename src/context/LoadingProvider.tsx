@@ -40,22 +40,6 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setLoading,
   };
 
-  useEffect(() => {
-    // On mobile: no 3D model is shown, so kick off the page entry animations
-    // directly (slight delay to ensure the DOM is painted first).
-    if (window.innerWidth <= 768) {
-      import("../components/utils/initialFX").then((module) => {
-        if (module.initialFX) {
-          setTimeout(() => {
-            module.initialFX();
-          }, 100);
-        }
-      });
-    }
-  }, []);
-
-  // Empty effect kept as a placeholder — loading state changes trigger re-renders
-  // via the value object below, so no extra side-effects are needed here.
   useEffect(() => {}, [loading]);
 
   return (

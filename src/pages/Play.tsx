@@ -139,6 +139,7 @@ const Play = () => {
   const files = boardFlipped ? ['h', 'g', 'f', 'e', 'd', 'c', 'b', 'a'] : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
   const ranks = boardFlipped ? ['1', '2', '3', '4', '5', '6', '7', '8'] : ['8', '7', '6', '5', '4', '3', '2', '1'];
 
+  // Derives a human-readable status string from the current chess.js game state
   const updateGameStatus = useCallback((g: Chess) => {
     if (g.isCheckmate()) {
       setGameStatus(g.turn() === 'w' ? 'Checkmate! Black wins!' : 'Checkmate! White wins!');

@@ -37,7 +37,7 @@ body {
   overflow: hidden;
 }
 
-/* Allow scrolling on mobile */
+/* Mobile scroll and layout overrides */
 @media only screen and (max-width: 768px) {
   body {
     overflow: auto !important;
@@ -52,9 +52,9 @@ body {
     touch-action: manipulation;
   }
 
-  /* Ensure no fixed elements block scrolling */
+  /* Allow natural height — position: relative is kept so absolute children
+     (like the 3D canvas) anchor correctly within the container */
   .container-main {
-    position: static !important;
     height: auto !important;
   }
 }

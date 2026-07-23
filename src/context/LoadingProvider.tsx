@@ -28,11 +28,8 @@ interface LoadingType {
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
-  // Start loading on desktop; skip entirely on mobile (no 3D model there)
-  const [isLoading, setIsLoading] = useState(() => {
-    if (window.innerWidth <= 768) return false;
-    return true;
-  });
+  // Loading screen is shown on all devices while the 3D model downloads
+  const [isLoading, setIsLoading] = useState(true);
 
   // Current loading percentage (0–100), passed down to <Loading percent={...} />
   const [loading, setLoading] = useState(0);

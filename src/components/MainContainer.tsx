@@ -56,9 +56,8 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       {/* Fixed left-side column with GitHub / LinkedIn / Twitter / Instagram icons */}
       <SocialIcons />
 
-      {/* 3D character canvas — only mounted on desktop to avoid mobile overhead.
-          It is fixed-position and overlays the first (landing) section.       */}
-      {isDesktopView && !isMobile && children}
+      {/* 3D character canvas — renders on all screen sizes */}
+      {children}
 
       {/* Scrollable page content — all sections stack vertically */}
       <div className="container-main">

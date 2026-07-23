@@ -35,8 +35,8 @@ export default function setSplitText() {
   // on mobile when the address bar shows/hides, causing jank)
   ScrollTrigger.config({ ignoreMobileResize: true });
 
-  // Below 900 px: skip all split-text animations (mobile / small tablet)
-  if (window.innerWidth < 900) return;
+  // Below 480 px: skip split-text animations on very small phones
+  if (window.innerWidth < 480) return;
 
   const paras: NodeListOf<ParaElement> = document.querySelectorAll(".para");
   const titles: NodeListOf<ParaElement> = document.querySelectorAll(".title");

@@ -5,6 +5,15 @@
 
 /* Mobile layout: 3D character visible, text scaled for small screens */
 @media only screen and (max-width: 768px) {
+  /* Use fixed positioning so the canvas anchors to the viewport (not the document),
+     matching how it behaves on desktop. z-index: 0 lets content sections scroll over it. */
+  .character-model {
+    position: fixed;
+    bottom: 0;
+    height: 65vh;
+    z-index: 0;
+  }
+
   /* Scale down name text */
   .landing-intro h1 {
     font-size: 22px;

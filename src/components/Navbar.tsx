@@ -85,9 +85,13 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        {/* Logo — initials derived from fullName (e.g. "PO") */}
+        {/* Logo — Poza logo image (replaces the old "PO" initials text) */}
         <a href="/#" className="navbar-title" data-cursor="disable">
-          {config.developer.fullName.split(" ").map(n => n[0]).join("")}
+          <img
+            src="/images/poza-logo.svg"
+            alt={config.developer.fullName}
+            className="navbar-logo"
+          />
         </a>
 
         {/* Email link shown on the right side of the navbar */}

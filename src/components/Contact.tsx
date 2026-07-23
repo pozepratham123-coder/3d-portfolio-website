@@ -134,8 +134,14 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* ── Box 3: Credit + Copyright ────────────────────────────────── */}
+          {/* ── Box 3: Logo + Credit + Copyright ─────────────────────────── */}
           <div className="contact-box">
+            {/* Poza logo above the credit line */}
+            <img
+              src="/images/poza-logo.svg"
+              alt={config.developer.fullName}
+              className="contact-logo"
+            />
             <h2>
               Designed and Developed <br /> by <span>{config.developer.fullName}</span>
             </h2>

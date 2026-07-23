@@ -1,3 +1,17 @@
+// LoadingProvider.tsx — Global loading-screen context.
+//
+// How it works:
+//   1. On desktop (> 768 px): isLoading starts true → <Loading /> overlay is shown.
+//      The 3D character reports its download progress via setLoading(percent).
+//      Once the model is ready, Loading.tsx calls setIsLoading(false) to dismiss.
+//
+//   2. On mobile (≤ 768 px): the 3D character is hidden entirely, so we skip
+//      the loading screen (isLoading starts false) and immediately trigger
+//      the entry animations (initialFX) with a short delay.
+//
+// Any child component can read { isLoading, setIsLoading, setLoading } via
+// the useLoading() hook.
+
 import {
   createContext,
   PropsWithChildren,
@@ -7,20 +21,24 @@ import {
 } from "react";
 import Loading from "../components/Loading";
 
+// Shape of the context value
 interface LoadingType {
   isLoading: boolean;
-  setIsLoading: (state: boolean) => void;
-  setLoading: (percent: number) => void;
+  setIsLoading: (state: boolean) => void; // Called by Loading.tsx when load is complete
+  setLoading: (percent: number) => void;  // Called by Scene.tsx to update progress bar
 }
 
+// The context itself — null until the Provider is mounted
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
+  // Start loading on desktop; skip entirely on mobile (no 3D model there)
   const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile
     if (window.innerWidth <= 768) return false;
     return true;
   });
+
+  // Current loading percentage (0–100), passed down to <Loading percent={...} />
   const [loading, setLoading] = useState(0);
 
   const value = {
@@ -28,8 +46,10 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setIsLoading,
     setLoading,
   };
+
   useEffect(() => {
-    // Auto-start animations on mobile since there's no 3D model
+    // On mobile: no 3D model is shown, so kick off the page entry animations
+    // directly (slight delay to ensure the DOM is painted first).
     if (window.innerWidth <= 768) {
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
@@ -41,16 +61,23 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     }
   }, []);
 
+  // Empty effect kept as a placeholder — loading state changes trigger re-renders
+  // via the value object below, so no extra side-effects are needed here.
   useEffect(() => {}, [loading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>
+      {/* Show the loading overlay only while isLoading is true */}
       {isLoading && <Loading percent={loading} />}
+
+      {/* The actual page content lives inside <main> so initialFX can
+          add the "main-active" class to trigger the fade-in animation     */}
       <main className="main-body">{children}</main>
     </LoadingContext.Provider>
   );
 };
 
+// Convenience hook — throws if used outside a LoadingProvider
 export const useLoading = () => {
   const context = useContext(LoadingContext);
   if (!context) {

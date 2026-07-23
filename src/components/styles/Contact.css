@@ -142,6 +142,7 @@ a.contact-social {
   .contact-section {
     margin-top: 50px;
     padding-bottom: 50px;
+    min-height: auto;
   }
   .contact-container {
     width: calc(100% - 25px);

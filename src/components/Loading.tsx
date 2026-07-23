@@ -69,13 +69,9 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       {/* ── Top bar: logo + arcade game animation ──────────────────────── */}
       <div className="loading-header">
-        {/* Poza logo — top-left of the loading screen */}
+        {/* Logo: fullName without spaces (e.g. "PrathamOza") */}
         <a href="/#" className="loader-title" data-cursor="disable">
-          <img
-            src="/images/poza-logo.svg"
-            alt={config.developer.fullName}
-            className="loader-logo"
-          />
+          {config.developer.fullName.replace(/\s+/g, "")}
         </a>
 
         {/* Decorative bouncing-ball game graphic — slides out when `clicked` */}

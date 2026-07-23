@@ -151,8 +151,26 @@ export function setCharTimeline(
         .to(character.rotation, { x: -0.04, duration: 2, delay: 1 }, 0); // Slight head tilt as character exits
     }
   } else {
-    // ── Mobile / Tablet: simplified — just show the WhatIDo panel on scroll ─
+    // ── Mobile / Tablet: simplified animations ────────────────────────────
     if (character) {
+      // Fade and slide landing text out as user scrolls away from hero
+      tl1
+        .to(".landing-container", { opacity: 0, duration: 0.4 }, 0)
+        .to(".landing-container", { y: "20%", duration: 0.8 }, 0);
+
+      // Fade the character out as the About section enters view
+      gsap.to(".character-model", {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".about-section",
+          start: "top 80%",
+          end: "top 20%",
+          scrub: true,
+          invalidateOnRefresh: true,
+        },
+      });
+
+      // Show WhatIDo cards when they enter the viewport
       const tM2 = gsap.timeline({
         scrollTrigger: {
           trigger: ".what-box-in",

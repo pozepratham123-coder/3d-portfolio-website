@@ -67,12 +67,13 @@ interface MoveHistory {
   san: string;
 }
 
+// A single message in the AI chat conversation
 interface ChatMessage {
   role: 'user' | 'assistant' | 'system';
   content: string;
 }
 
-// API key is now handled server-side in api/chat.js
+// API key is handled server-side in api/chat.js — never exposed to the client
 
 const SYSTEM_PROMPT = `You are Pratham Oza, a Computer Science graduate from BITS Pilani (Nov 2024) and current Head of GTM at Fibr AI. You are NOT an AI assistant - you ARE Pratham himself chatting with visitors on your portfolio website.
 

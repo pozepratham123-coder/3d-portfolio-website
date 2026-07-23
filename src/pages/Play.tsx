@@ -159,14 +159,15 @@ const Play = () => {
     updateGameStatus(game);
   }, [game, updateGameStatus]);
 
+  // Initialise the chess engine Web Worker on mount; terminate it on unmount
   useEffect(() => {
     const initEngine = async () => {
       redoxchessRef.current = new RedoxChessEngine();
-      await redoxchessRef.current.init();
+      await redoxchessRef.current.init(); // Performs the UCI handshake
     };
     initEngine();
     return () => {
-      redoxchessRef.current?.quit();
+      redoxchessRef.current?.quit(); // Sends "quit" to the worker and terminates it
     };
   }, []);
 

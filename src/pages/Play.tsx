@@ -133,6 +133,9 @@ const Play = () => {
   const [chatInput, setChatInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
+  // Board coordinate arrays — reversed when the board is flipped
+  // files: columns a–h (left to right from White's perspective)
+  // ranks: rows 8–1 (top to bottom from White's perspective)
   const files = boardFlipped ? ['h', 'g', 'f', 'e', 'd', 'c', 'b', 'a'] : ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
   const ranks = boardFlipped ? ['1', '2', '3', '4', '5', '6', '7', '8'] : ['8', '7', '6', '5', '4', '3', '2', '1'];
 

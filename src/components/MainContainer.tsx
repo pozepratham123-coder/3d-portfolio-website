@@ -2,11 +2,7 @@
 //
 // Responsibilities:
 //   • Renders the navbar, social icons, and all page sections in order.
-//   • Detects viewport size to decide whether to mount the 3D character model.
-//     - Desktop (> 1024 px): renders `children` (CharacterModel) inside the
-//       fixed canvas overlay so it appears above all scrolling content.
-//     - Tablet / Mobile: the character is skipped to save resources and avoid
-//       Three.js setup on low-power devices.
+//   • Mounts the 3D character model (children) on all screen sizes.
 //   • Calls setSplitText() on mount and resize to register scroll-triggered
 //     text animations (GSAP) for all .para and .title elements on the page.
 

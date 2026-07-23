@@ -25,13 +25,10 @@ import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText"; // Registers GSAP scroll text animations
 
 const MainContainer = ({ children }: PropsWithChildren) => {
-  // true when viewport is wider than 1024 px (tablet-landscape / desktop)
+  // true when viewport is wider than 1024 px — used to tune splitText trigger timing
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
-
-  // Captured once at mount — used to prevent the character from ever loading on mobile
-  const [isMobile] = useState<boolean>(window.innerWidth <= 768);
 
   useEffect(() => {
     const resizeHandler = () => {

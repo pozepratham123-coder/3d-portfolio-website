@@ -1,13 +1,9 @@
 // LoadingProvider.tsx — Global loading-screen context.
 //
 // How it works:
-//   1. On desktop (> 768 px): isLoading starts true → <Loading /> overlay is shown.
-//      The 3D character reports its download progress via setLoading(percent).
-//      Once the model is ready, Loading.tsx calls setIsLoading(false) to dismiss.
-//
-//   2. On mobile (≤ 768 px): the 3D character is hidden entirely, so we skip
-//      the loading screen (isLoading starts false) and immediately trigger
-//      the entry animations (initialFX) with a short delay.
+//   The loading screen (isLoading = true) is shown on all devices while the
+//   3D character model downloads. Once the model is ready, Loading.tsx calls
+//   setIsLoading(false) to dismiss the overlay.
 //
 // Any child component can read { isLoading, setIsLoading, setLoading } via
 // the useLoading() hook.

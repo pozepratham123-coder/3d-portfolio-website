@@ -95,6 +95,14 @@
   animation-delay: 1s;
 }
 
+/* On mobile, skip the flicker animation — show content immediately */
+@media only screen and (max-width: 768px) {
+  .what-content-in {
+    opacity: 1;
+    animation: none;
+  }
+}
+
 @keyframes whatFlicker {
 
   0%,

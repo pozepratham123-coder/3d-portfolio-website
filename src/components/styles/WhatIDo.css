@@ -445,10 +445,14 @@
     height: auto;
   }
 
-  /* Always show tools/tags on mobile — no need to hide them */
+  /* Always show description, tools, and tags on mobile */
+  .what-content p,
   .what-content h5,
   .what-content-flex {
-    opacity: 1;
+    max-height: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    margin-top: 10px !important;
     transition: 0.3s;
   }
 

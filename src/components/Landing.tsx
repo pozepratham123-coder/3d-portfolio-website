@@ -43,7 +43,6 @@ const Landing = ({ children }: PropsWithChildren) => {
               The gradient on .landing-info-h2::after partially masks
               the accent line, giving depth to the reveal animation.      */}
           <div className="landing-info">
-            <h3>An</h3>
 
             {/* Accent line — first part of config.developer.title before " | "
                 e.g. "HEAD OF GTM"

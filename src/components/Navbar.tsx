@@ -25,7 +25,11 @@ export let lenis: Lenis | null = null;
 
 const Navbar = () => {
   useEffect(() => {
-    // ── Initialise Lenis smooth scroll ────────────────────────────────────
+    // ── Initialise Lenis smooth scroll (desktop only) ─────────────────────
+    // On mobile, Lenis attaches touch listeners even when stopped, which
+    // calls preventDefault() and blocks native scroll. Skip it entirely on mobile.
+    if (window.innerWidth <= 768) return;
+
     lenis = new Lenis({
       duration: 1.7,                               // Total scroll animation length (seconds)
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Expo ease-out

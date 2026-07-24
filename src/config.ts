@@ -17,7 +17,7 @@ export const config = {
 
     // ─── Social / contact quick-access ───────────────────────────────────────
     social: {
-        github: "pozepratham123-coder",
+        github: "Pozaeiou",
         email: "pratham@poza.in",
         location: "Bengaluru, India"
     },
@@ -130,7 +130,7 @@ export const config = {
     // Leave facebook as "" to hide it — Contact.tsx conditionally renders it.
     contact: {
         email: "pratham@poza.in",
-        github: "https://github.com/pratham-oza",
+        github: "https://github.com/Pozaeiou",
         linkedin: "https://linkedin.com/in/pratham-oza-9637ba201",
         twitter: "https://x.com/aspro_99",
         facebook: "",                                 // Empty → hidden in Contact section

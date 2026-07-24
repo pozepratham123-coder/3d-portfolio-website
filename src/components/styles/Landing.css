@@ -15,6 +15,11 @@
     pointer-events: none;
   }
 
+  /* Push name block below the fixed navbar on mobile */
+  .landing-intro {
+    top: 80px;
+  }
+
   /* Name text — larger and more prominent on mobile */
   .landing-intro h1 {
     font-size: 38px;

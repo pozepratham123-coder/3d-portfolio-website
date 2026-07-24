@@ -32,8 +32,8 @@ export const config = {
     // Add new roles at the TOP of this array — they render top-to-bottom.
     experiences: [
         {
-            position: "Head of GTM",
-            company: "Fibr AI",
+            position: "Head of GTM, Full-Time",
+            company: "Fibr AI, Accel Funded $7.5 Million",
             period: "Sep 2024 - Present",   // "Present" triggers "NOW" label in the timeline
             location: "Bengaluru, India",
             description: "Building AI-powered web experiences for every visitor at Fibr AI. Driving B2B tech sales across GTM channels using automation and AI — from outbound discovery through to deal close and client solutioning.",
@@ -47,7 +47,7 @@ export const config = {
             technologies: ["AI Agents", "GTM", "B2B SaaS", "CRO", "Sales Automation", "Solutioning", "Pipedrive CRM"]
         },
         {
-            position: "Cloud Consultant",
+            position: "Cloud Consultant, Full-Time",
             company: "Searce Inc",
             period: "Jul 2024 - Sep 2024",
             location: "India",
@@ -59,8 +59,8 @@ export const config = {
             technologies: ["Google Cloud", "Google Workspace", "Cloud Consulting", "GCP Digital Leader"]
         },
         {
-            position: "Performance & Growth Marketing Intern",
-            company: "Viacom18 (JioCinema)",
+            position: "Performance & Growth, Intern",
+            company: "Viacom18 (JioHotStar), PPO Rejected",
             period: "Feb 2024 - Jun 2024",
             location: "Mumbai, India",
             description: "Performance & Growth Marketing at Digital Ventures, JioCinema. Led the JioCinema Premium launch (Rs.29/month) — managing paid campaigns across Google & Meta, SEO for SVOD titles, analytics via AppsFlyer & MixPanel. PPO offered.",
@@ -74,7 +74,7 @@ export const config = {
             technologies: ["Performance Marketing", "SEO", "Google Ads", "Meta Ads", "Mixpanel", "AppsFlyer", "DV 360"]
         },
         {
-            position: "Founding Team — Founder's Office",
+            position: "Founder's Office, Intern",
             company: "UpTrain (YC W23)",
             period: "Sep 2023 - Dec 2023",
             location: "Remote",
@@ -89,7 +89,7 @@ export const config = {
             technologies: ["YC W23", "AI", "LLM Evaluation", "Sales", "Growth", "Content Marketing"]
         },
         {
-            position: "RPA Developer — BITS Pilani PS-1",
+            position: "RPA Developer, Intern",
             company: "Silver Touch Technologies",
             period: "Jun 2022 - Aug 2022",
             location: "Ahmedabad, India",

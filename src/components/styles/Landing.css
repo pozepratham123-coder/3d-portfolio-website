@@ -7,10 +7,12 @@
 @media only screen and (max-width: 768px) {
   /* Character is position: absolute (base CSS) inside landing-section
      (position: relative; height: 100svh) — no fixed positioning needed.
-     height: 80vh fills most of the section; bottom: 0 pins to the bottom. */
+     height: 80vh fills most of the section; bottom: 0 pins to the bottom.
+     pointer-events: none ensures the canvas container never blocks touch scroll. */
   .character-model {
     height: 80vh;
     bottom: 0;
+    pointer-events: none;
   }
 
   /* Scale down name text for small screens */

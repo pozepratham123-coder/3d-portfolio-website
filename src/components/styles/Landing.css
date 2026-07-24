@@ -182,6 +182,7 @@
   transform: translateX(-50%);
   z-index: 9;
   position: absolute;
+  pointer-events: none; /* purely decorative — must not block touch/scroll */
 }
 
 .character-model::before {
@@ -194,6 +195,7 @@
   transform: translateX(-50%);
   z-index: 9;
   position: absolute;
+  pointer-events: none; /* extends below landing section — must not block scroll */
 }
 
 .character-loaded .character-rim {

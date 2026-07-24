@@ -297,7 +297,8 @@
   }
 
   .what-box-in {
-    height: 400px;
+    min-height: 400px;
+    height: auto;
   }
 
   .what-content h3 {

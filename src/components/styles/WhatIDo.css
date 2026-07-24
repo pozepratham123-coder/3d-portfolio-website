@@ -81,6 +81,21 @@
   margin: 0;
 }
 
+.what-content h4 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.what-content p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  letter-spacing: 0.7px;
+}
+
 .what-content p,
 .what-content h5,
 .what-content-flex {

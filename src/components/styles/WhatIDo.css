@@ -245,8 +245,8 @@
 }
 
 .what-content-in {
-  height: 100%;
-  overflow: hidden;
+  height: auto;    /* grows with content */
+  overflow: visible; /* never clips tools or tags */
 }
 
 .what-content-in h5 {

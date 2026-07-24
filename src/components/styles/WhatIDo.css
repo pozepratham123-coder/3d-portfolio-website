@@ -5,7 +5,9 @@
   place-items: center;
   position: relative;
   opacity: 1;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+  padding: 60px 0;
   width: var(--cWidth);
   max-width: 1920px;
   margin: auto;
@@ -38,37 +40,39 @@
 
 .what-box-in {
   flex-direction: column;
-  min-height: 500px; /* grows with content instead of clipping */
+  min-height: 450px;
   height: auto;
   margin-left: 200px;
   position: relative;
   display: flex;
+  gap: 30px;
 }
 
 .what-content {
   width: 450px;
-  min-height: 160px; /* compact resting height */
-  flex: 1;           /* equal share of container by default */
-  transition: 0.5s;
+  min-height: 160px;
+  height: auto;
+  flex: none;
+  transition: all 0.4s ease-in-out;
   position: relative;
-  padding: 50px;
+  padding: 35px 40px;
   box-sizing: border-box;
 }
 
 .what-noTouch:hover,
 .what-content-active {
-  flex: 2;           /* expanded card takes ~2/3 of container */
-  height: auto;      /* grows to show all content — never clips */
-  min-height: 300px;
-  padding: 40px 50px;
+  flex: none;
+  height: auto;
+  min-height: 260px;
+  padding: 35px 40px;
 }
 
 .what-noTouch:hover~.what-content,
 .what-box-in:hover .what-noTouch:not(:hover),
 .what-content.what-sibling {
-  flex: 1;
-  min-height: 120px;
-  padding: 10px 50px;
+  flex: none;
+  opacity: 0.85;
+  padding: 25px 40px;
 }
 
 .what-content h3 {

@@ -375,7 +375,7 @@
   }
 
   .what-box:last-child {
-    height: 500px;
+    height: 380px;
   }
 
   .what-box {
@@ -390,7 +390,7 @@
 
   .what-box-in {
     margin-left: 0px;
-    height: 450px;
+    height: 360px;
   }
 
   .what-content h5,

@@ -97,10 +97,12 @@ const Loading = ({ percent }: { percent: number }) => {
         {/* Scrolling marquee ticker across the top */}
         <div className="loading-marquee">
           <Marquee>
-            <span>&nbsp; AI Engineer &nbsp;</span>
-            <span>&nbsp; Full Stack Developer &nbsp;</span>
-            <span>&nbsp; AI Engineer &nbsp;</span>
-            <span>&nbsp; Full Stack Developer &nbsp;</span>
+            <span>&nbsp; Head of GTM &nbsp;</span>
+            <span>&nbsp; AI &amp; Product &nbsp;</span>
+            <span>&nbsp; Masti Merchant &nbsp;</span>
+            <span>&nbsp; Head of GTM &nbsp;</span>
+            <span>&nbsp; AI &amp; Product &nbsp;</span>
+            <span>&nbsp; Masti Merchant &nbsp;</span>
           </Marquee>
         </div>
 

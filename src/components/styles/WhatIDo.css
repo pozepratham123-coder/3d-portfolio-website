@@ -95,11 +95,15 @@
   animation-delay: 1s;
 }
 
-/* On mobile, skip the flicker animation — show content immediately */
+/* On mobile, skip the flicker animation and force section visible */
 @media only screen and (max-width: 768px) {
   .what-content-in {
     opacity: 1;
     animation: none;
+  }
+  /* Override any GSAP inline display:none that may have been set */
+  .what-box-in {
+    display: flex !important;
   }
 }
 

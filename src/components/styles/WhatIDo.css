@@ -348,7 +348,8 @@
   }
 
   .what-box-in {
-    height: 500px;
+    min-height: 500px;
+    height: auto;
     margin-left: -50px;
   }
 
@@ -363,14 +364,15 @@
 
   .what-noTouch:hover,
   .what-content-active {
-    min-height: 67%;
+    height: auto;
+    min-height: 300px;
     padding: 50px;
   }
 
   .what-noTouch:hover~.what-content,
   .what-box-in:hover .what-noTouch:not(:hover),
   .what-content.what-sibling {
-    min-height: 33%;
+    min-height: 120px;
     padding: 10px 50px;
   }
 }

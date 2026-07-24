@@ -393,7 +393,7 @@
   }
 
   .what-box:last-child {
-    height: 380px;
+    height: auto; /* grows with card content */
   }
 
   .what-box {
@@ -408,20 +408,15 @@
 
   .what-box-in {
     margin-left: 0px;
-    height: 360px;
+    min-height: 360px;
+    height: auto;
   }
 
+  /* Always show tools/tags on mobile — no need to hide them */
   .what-content h5,
   .what-content-flex {
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  .what-noTouch:hover h5,
-  .what-content-active h5,
-  .what-noTouch:hover .what-content-flex,
-  .what-content-active .what-content-flex {
     opacity: 1;
+    transition: 0.3s;
   }
 
   .what-content {
@@ -434,6 +429,8 @@
 
   .what-noTouch:hover,
   .what-content-active {
+    height: auto;
+    min-height: 250px;
     padding: 10px 30px;
   }
 

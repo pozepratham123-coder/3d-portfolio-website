@@ -89,7 +89,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          My <span>Work</span>
+          My <span>Achievements</span>
         </h2>
 
         {/* Horizontal flex strip — this element is translated by GSAP */}
@@ -107,7 +107,7 @@ const Work = () => {
                     <p>{project.category}</p>
                   </div>
                 </div>
-                <h4>Tools and features</h4>
+                <h4>One-line Highlight</h4>
                 <p>{project.technologies}</p>
               </div>
 
@@ -120,9 +120,9 @@ const Work = () => {
           <div className="work-box work-box-cta">
             <div className="see-all-works">
               <h3>Want to see more?</h3>
-              <p>Explore all of my projects and creations</p>
+              <p>Explore all of my achievements... Close to my heart</p>
               <Link to="/myworks" className="see-all-btn" data-cursor="disable">
-                See All Works →
+                See All →
               </Link>
             </div>
           </div>

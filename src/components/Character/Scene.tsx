@@ -221,6 +221,9 @@ const Scene = () => {
           document.removeEventListener("mousemove", onMouseMove);
           landingDiv.removeEventListener("touchstart", onTouchStart);
           landingDiv.removeEventListener("touchend", onTouchEnd);
+          // Note: the dynamically added touchmove listeners on individual elements
+          // are not tracked individually; they are cleaned up when the DOM element
+          // is removed or when the component unmounts.
         }
       };
     }

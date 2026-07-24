@@ -141,13 +141,13 @@ export const config = {
     // Each object maps to one card. title → big heading, tools → tag pills.
     skills: {
         develop: {
-            title: "GTM & AI SALES",
-            description: "Driving B2B growth with automation & AI agents",
-            details: "Building GTM engines at Fibr AI using AI-driven outbound, sales automation, and CRO strategies. From 100+ enterprise discoveries to $200K in proposals — blending tech and sales to close deals and deliver results.",
-            tools: ["AI Agents", "GTM Strategy", "CRO", "B2B SaaS", "Outbound Sales", "Pipedrive CRM", "Apollo", "Lemlist", "Webhooks"]
+            title: "SELL",
+            description: "Driving B2B Tech Sales & GTM with automation & AI agents",
+            details: "Building GTM engines at Fibr AI using AI-driven outbound, sales automation, and CRO strategies. From 100+ enterprise discoveries to $500K in proposals — blending tech and sales to close deals and deliver results.",
+            tools: ["Discovery", "Pitch", "Leadership", "AI Agents", "N8N", "GTM Strategy", "CRO", "B2B SaaS", "Outbound Sales", "Pipedrive CRM", "Apollo", "Lemlist", "Webhooks"]
         },
         design: {
-            title: "SOFTWARE & RESEARCH",
+            title: "BUILD",
             description: "Building products, bots & published research",
             details: "Co-founded Raptures (Web3 Discord Bot), shipped RPA bots at Silver Touch, contributed to LLM evaluation at UpTrain (YC W23), and published GAN-based NFT encryption research in IEEE Access. Proficient in Python, TypeScript, React, and Node.js.",
             tools: ["Python", "TypeScript", "React", "Node.js", "Discord API", "Solana", "RPA", "Automation Anywhere", "PyTorch"]

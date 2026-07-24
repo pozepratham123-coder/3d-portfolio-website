@@ -15,15 +15,15 @@
     pointer-events: none;
   }
 
-  /* Scale down name text for small screens */
+  /* Name text — larger and more prominent on mobile */
   .landing-intro h1 {
-    font-size: 22px;
-    line-height: 24px;
+    font-size: 38px;
+    line-height: 40px;
     letter-spacing: 1px;
   }
 
   .landing-intro h2 {
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 1px;
   }
 

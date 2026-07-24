@@ -11,13 +11,13 @@ export const config = {
     developer: {
         name: "Pratham",                              // First name only (used in casual greetings)
         fullName: "Pratham Oza",                      // Full name shown in headings / footer
-        title: "Head of GTM | AI & Software Engineer", // Job title split by " | " in Landing.tsx
-        description: "Head of GTM at Fibr AI (Accel Funded, $7.5Mn), building AI Agents for Website Experiences. Computer Science graduate from BITS Pilani with a Minor in Entrepreneurship."
+        title: "Head of GTM | AI & Product", // Job title split by " | " in Landing.tsx
+        description: "Head of GTM at Fibr AI (Accel Funded, $7.5Mn), building AI Agents for Website Experiences. Computer Science graduate from BITS Pilani. Skadoosh."
     },
 
     // ─── Social / contact quick-access ───────────────────────────────────────
     social: {
-        github: "pratham-oza",
+        github: "pozepratham123-coder",
         email: "pratham@poza.in",
         location: "Bengaluru, India"
     },
@@ -25,7 +25,7 @@ export const config = {
     // ─── About section ────────────────────────────────────────────────────────
     about: {
         title: "About Me",
-        description: "Working at Fibr (Accel Funded, $7.5Mn), building AI Agents for Website Experiences and learning GTM along the way. Computer Science @ BITS Pilani, Pilani Campus."
+        description: "Working at Fibr (Accel Funded, $7.5Mn), Heading GTM, and building AI Agents for Website Experiences along the way. Computer Science @ BITS Pilani, Pilani Campus."
     },
 
     // ─── Work experience timeline (rendered in Career.tsx) ───────────────────

@@ -42,16 +42,45 @@ const Career = () => {
           {/* One card per experience entry — stagger-faded in by GSAP */}
           {config.experiences.map((exp, index) => (
             <div key={index} className="career-info-box">
-              <div className="career-info-in">
-                <div className="career-role">
-                  <h4>{exp.position}</h4>  {/* Job title */}
-                  <h5>{exp.company}</h5>   {/* Company name */}
-                </div>
-                {/* Large year / "NOW" label on the right */}
+
+              {/* ── Left column: year label ───────────────────────── */}
+              <div className="career-year">
                 <h3>{getDisplayYear(exp.period)}</h3>
               </div>
-              {/* Short description shown beneath the role + company */}
-              <p>{exp.description}</p>
+
+              {/* ── Right column: all details ─────────────────────── */}
+              <div className="career-details">
+
+                {/* Top row: role + company + period + location */}
+                <div className="career-header">
+                  <div className="career-role">
+                    <h4>{exp.position}</h4>
+                    <h5>{exp.company}</h5>
+                  </div>
+                  <div className="career-meta">
+                    <span className="career-period">{exp.period}</span>
+                    <span className="career-location">{exp.location}</span>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p>{exp.description}</p>
+
+                {/* Responsibilities bullet list */}
+                <ul className="career-responsibilities">
+                  {exp.responsibilities.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+
+                {/* Technology / skill tags */}
+                <div className="career-tags">
+                  {exp.technologies.map((tech, i) => (
+                    <span key={i} className="career-tag">{tech}</span>
+                  ))}
+                </div>
+
+              </div>
             </div>
           ))}
         </div>

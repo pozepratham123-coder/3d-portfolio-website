@@ -17,7 +17,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
   useEffect(() => {
-    // ── Scroll-triggered entrance animation ────────────────────────────────
+    // On mobile, skip the animation — elements are visible by default via CSS.
+    // (GSAP fromTo would set opacity:0 as inline style, hiding them if the
+    //  ScrollTrigger never fires or fires late on smaller screens.)
+    if (window.innerWidth <= 768) return;
+
+    // ── Scroll-triggered entrance animation (desktop only) ─────────────────
     const contactTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".contact-section",

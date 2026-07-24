@@ -171,8 +171,10 @@ const Scene = () => {
       // don't interfere with normal page scrolling
       const landingDiv = document.getElementById("landingDiv");
       if (landingDiv) {
-        landingDiv.addEventListener("touchstart", onTouchStart);
-        landingDiv.addEventListener("touchend", onTouchEnd);
+        // passive: true — lets the browser start scrolling immediately without
+        // waiting for the listener to return (critical for smooth mobile scroll)
+        landingDiv.addEventListener("touchstart", onTouchStart, { passive: true });
+        landingDiv.addEventListener("touchend", onTouchEnd, { passive: true });
       }
 
       // ── Main render loop ───────────────────────────────────────────────

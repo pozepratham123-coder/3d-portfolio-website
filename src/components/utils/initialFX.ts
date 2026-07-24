@@ -20,8 +20,10 @@ export function initialFX() {
   // Allow the page to scroll (was hidden during loading)
   document.body.style.overflowY = "auto";
 
-  // Start Lenis smooth scroll (was paused during loading — see Navbar.tsx)
-  if (lenis) {
+  // Start Lenis smooth scroll on desktop only.
+  // On mobile, body already has overflow: auto (native touch scroll) so
+  // starting Lenis would cause double-scrolling.
+  if (lenis && window.innerWidth > 768) {
     lenis.start();
   }
 

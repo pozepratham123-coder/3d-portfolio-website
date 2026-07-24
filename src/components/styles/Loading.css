@@ -198,6 +198,12 @@
   font-size: 14px;
   letter-spacing: 0.2px;
 }
+
+.loader-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
 @keyframes blink {
   0% {
     opacity: 0;

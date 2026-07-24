@@ -38,7 +38,8 @@
 
 .what-box-in {
   flex-direction: column;
-  height: 500px;
+  min-height: 500px; /* grows with content instead of clipping */
+  height: auto;
   margin-left: 200px;
   position: relative;
   display: flex;

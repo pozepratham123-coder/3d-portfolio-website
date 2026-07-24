@@ -47,6 +47,18 @@ export const config = {
             technologies: ["AI Agents", "GTM", "B2B SaaS", "CRO", "Sales Automation", "Solutioning", "Pipedrive CRM"]
         },
         {
+            position: "Cloud Consultant",
+            company: "Searce Inc",
+            period: "Jul 2024 - Sep 2024",
+            location: "India",
+            description: "Cloud Consultant on the Google Workspace Team, India Division at Searce Inc — a Global Google Premier Partner. Completed the Google Cloud Digital Leader Certification.",
+            responsibilities: [
+                "Part of the Google Workspace Team, India Division at Searce Inc, a consulting firm operating as a Global Google Premier Partner",
+                "Completed the Google Cloud Digital Leader Certification, improving Searce's standing and certification portfolio as a Global Google Premier Partner"
+            ],
+            technologies: ["Google Cloud", "Google Workspace", "Cloud Consulting", "GCP Digital Leader"]
+        },
+        {
             position: "Performance & Growth Marketing Intern",
             company: "Viacom18 (JioCinema)",
             period: "Feb 2024 - Jun 2024",
@@ -60,18 +72,6 @@ export const config = {
                 "Collaborated with Havas Media (external agency) on daily reports directly viewed by SVOD upper management, reducing reporting time by 40%"
             ],
             technologies: ["Performance Marketing", "SEO", "Google Ads", "Meta Ads", "Mixpanel", "AppsFlyer", "DV 360"]
-        },
-        {
-            position: "Cloud Consultant",
-            company: "Searce Inc",
-            period: "Jul 2024 - Sep 2024",
-            location: "India",
-            description: "Cloud Consultant on the Google Workspace Team, India Division at Searce Inc — a Global Google Premier Partner. Completed the Google Cloud Digital Leader Certification.",
-            responsibilities: [
-                "Part of the Google Workspace Team, India Division at Searce Inc, a consulting firm operating as a Global Google Premier Partner",
-                "Completed the Google Cloud Digital Leader Certification, improving Searce's standing and certification portfolio as a Global Google Premier Partner"
-            ],
-            technologies: ["Google Cloud", "Google Workspace", "Cloud Consulting", "GCP Digital Leader"]
         },
         {
             position: "Founding Team — Founder's Office",
